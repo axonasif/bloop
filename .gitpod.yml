@@ -33,7 +33,7 @@ tasks:
       # https://github.com/gitpod-io/gitpod/issues/524
       find target -exec stat --format='%.Y %n' {} + > /workspace/.ts
 
-      # Give up some cache
+      # Give up some cache & more
       nix-collect-garbage -d
     command: |
       while read -r ts file; do touch -d "@${ts}" "${file}"; done < /workspace/.ts
