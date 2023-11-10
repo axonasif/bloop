@@ -12,9 +12,9 @@ ports:
     port: 7878
     protocol: http
 
-additionalRepositories:
-  - url: https://github.com/bloopai/answer-api
-    checkoutLocation: answer-api
+# additionalRepositories:
+#   - url: https://github.com/bloopai/answer-api
+#     checkoutLocation: answer-api
 
 tasks:
   - name: Backend
